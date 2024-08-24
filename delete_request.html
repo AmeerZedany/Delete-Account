@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Account - Dalilak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Account Deletion Request</h1>
+        </header>
+        <main>
+            <section class="info-section">
+                <p>We’re sorry to see you go. Please enter your email and password below to request deletion of your account. This action cannot be undone.</p>
+            </section>
+            <form id="delete-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit">Request Deletion</button>
+            </form>
+            <section class="feedback-section">
+                <p id="feedback-message"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Dalilak. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
