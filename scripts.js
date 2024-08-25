@@ -22,9 +22,10 @@ document.getElementById('delete-form').addEventListener('submit', async function
             const error = await response.json();
             feedbackMessage.textContent = `Error: ${error.message}`;
         }
-    }  catch (error) {
+    } catch (error) {
     console.error('Error details:', error);
     feedbackMessage.textContent = 'An unexpected error occurred. Please try again later.';
 }
+
 
 });
