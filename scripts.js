@@ -7,7 +7,7 @@ document.getElementById('delete-form').addEventListener('submit', async function
     const feedbackMessage = document.getElementById('feedback-message');
 
     try {
-        const response = await fetch('https://52.29.118.89:8081/api/account/delete', {
+        const response = await fetch('https://52.29.118.89:8081/api/account/delete', {  // Ensure this is HTTPS
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
